@@ -1,0 +1,1 @@
+git@github.com:ZulfiyaP3/ono-tebe-nado-ad
