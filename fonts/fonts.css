@@ -2,9 +2,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src:
-    url('./Raleway-Regular.woff2') format('woff2'),
-    url('./Raleway-Regular.woff') format('woff');
+  src: url('./Raleway-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
@@ -20,8 +18,6 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src:
-    url('./Raleway-Bold.woff2') format('woff2'),
-    url('./Raleway-Bold.woff') format('woff');
+  src: url('./Raleway-Bold.ttf') format('truetype');
   font-display: swap;
 }

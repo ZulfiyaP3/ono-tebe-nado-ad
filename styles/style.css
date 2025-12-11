@@ -15,17 +15,35 @@
   display: flex;
   gap: 0;
   list-style: none;
+  padding-left: 0;
 }
 
 .header__links-list-item {
-  list-style: circle;
+  list-style: none;
   margin-left: 32px;
+  padding-left: 0;
+  position: relative;
 }
 
+.header__links-list-item::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 0.5px solid #000;
+  background-color: transparent;
+}
 
 .header__links-list-item_no-bullit {
   list-style: none;
   margin-left: 0;
+}
+
+.header__links-list-item_no-bullit::before {
+  display: none;
 }
 
 .header__link {
@@ -163,7 +181,7 @@
 
 /* Lots */
 .lots {
-  padding: 180px 50px;
+  padding: 180px 24px;
 }
 
 .lots__heading {
@@ -268,7 +286,7 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 100px 50px;
+  padding: 100px 24px;
 }
 
 .about__column {
